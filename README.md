@@ -1,7 +1,3 @@
-Certainly! Here's the structure written in **Markdown** so you can include it directly in your README:
-
----
-
 # Euromillions
 
 Data from **2015–2025** for **Austria**.
@@ -110,7 +106,3 @@ Each entry follows this structure:
     * `combination`: Matching criteria (e.g., "5 Numbers + 2 Stars")
     * `winners`: Number of Austrian winners for that rank
     * `prize`: Prize amount in euros
-
----
-
-Let me know if you'd like this formatted in a table or JSON code block instead!
