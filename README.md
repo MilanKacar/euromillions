@@ -1,11 +1,16 @@
+Certainly! Here's the structure written in **Markdown** so you can include it directly in your README:
+
+---
+
 # Euromillions
 
-Data from 2015-2025 for Austria.
+Data from **2015–2025** for **Austria**.
 
-Data has following structure:
+Each entry follows this structure:
 
+<pre>
 {
-  "YYYY-MM-DD": {
+  "<b>YYYY-MM-DD</b>": {
     "winning_numbers": [int, int, int, int, int],        // 5 main numbers drawn (1–50)
     "lucky_stars": [int, int],                           // 2 lucky stars drawn (1–12)
     "prizes": [
@@ -90,4 +95,22 @@ Data has following structure:
     ]
   }
 }
+</pre>
 
+### Notes:
+
+* The top-level key is the **draw date** in format `YYYY-MM-DD`.
+* `winning_numbers` are 5 integers between 1 and 50.
+* `lucky_stars` are 2 integers between 1 and 12.
+* `prizes` is an array of **13 ranks**, from I to XIII.
+
+  * Each rank includes:
+
+    * `rank`: Roman numeral (e.g., "I", "X", "XIII")
+    * `combination`: Matching criteria (e.g., "5 Numbers + 2 Stars")
+    * `winners`: Number of Austrian winners for that rank
+    * `prize`: Prize amount in euros
+
+---
+
+Let me know if you'd like this formatted in a table or JSON code block instead!
